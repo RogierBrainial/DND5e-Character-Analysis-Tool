@@ -318,7 +318,108 @@ data:
         - statId
         - requiresAttunement
         - value
-      - class
+      - class(0:):
+        - id
+        - type
+        - subType
+        - dice
+        - statId
+        - duration
+        - isGranted
+        - bonusTypes(0:)
+      - feat(0:):
+        - id
+        - type
+        - subType
+        - dice
+        - restriction
+        - statId
+        - duration
+        - isGranted
+        - bonusTypes(0:) 
+      - condition(0:)
+    - classSpells(0:):
+      - spells(0:1):
+        - overrideSaveDc
+        - limitedUse
+        - id
+        - name
+        - level
+        - school
+        - duration:
+          - durationInterval
+          - durationUnit
+          - durationType
+        - activation:
+          - activationTime
+          - activationType
+        - range:
+          - origin
+          - rangeValue
+          - aoeType
+          - aoeValue
+        - asPartOfWeaponAttack
+        - description
+        - snippet
+        - concentration
+        - ritual
+        - rangeArea
+        - damageEffect
+        - components(0:)
+        - componentsDescription
+        - saveDcAbilityId
+        - healing
+        - healingdice(0:)
+        - tempHpDice(0:)
+        - attackType
+        - canCastAtHigherLevel
+        - requiresSavingThrow
+        - requiresAttackRoll
+        - atHigherLevels: 
+          - scaleType
+          - higherLevelDefinitions(0:)
+          - additionalAttacks(0:)
+          - additionalTargets(0:)
+          - areaOfEffect(0:)
+          - duration(0:)
+          - creatures(0:)
+          - special(0:)
+          - points(0:)
+        - modifiers(0:):
+          - type
+          - subType
+          - dice
+          - restriction
+          - statId
+          - requiresAttunement
+          - duration
+          - bonusTypes(0:)
+          - value
+          - die:
+            - diceCount
+            - diceValue
+            - diceMultiplier
+            - fixedValue
+            - diceString
+          - count
+          - durationUnit
+          - usePrimaryStat
+          - atHigherLevels:
+            - scaleType
+            - higherLevelDefinitions(0:):
+              - level
+              - dice:
+                - diceCount
+                - diceValue
+                - diceMultiplier
+                - fixedValue
+                - diceString
+              - value
+              - details
+
+
+
+
            
 
 
